@@ -73,10 +73,12 @@ const CardItem = styled(Card)({
 const Word = styled.p`
   font-size: 20px;
   font-weight: bold;
+  color: #212121;
 `;
 
 const Info = styled.p`
   font-size: 15px;
+  color: #212121;
 `;
 
 const Ex = styled.p`

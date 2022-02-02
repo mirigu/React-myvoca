@@ -1,5 +1,6 @@
 import React from "react";
 import { Route } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 import { StylesProvider } from "@mui/styles";
 import styled from "styled-components";
@@ -9,10 +10,18 @@ import Main from "./Main";
 import Detail from "./Detail";
 
 function App() {
+  const history = useHistory();
+
   return (
     <div className="App">
       <StylesProvider injectFirst>
-        <Header>MY VOCA</Header>
+        <Header
+          onClick={() => {
+            history.push("/");
+          }}
+        >
+          MY VOCA
+        </Header>
         <Containers>
           <Route path="/" exact component={Main}></Route>
           <Route path="/detail" component={Detail}></Route>
