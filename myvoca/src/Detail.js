@@ -84,6 +84,7 @@ const Div = styled.div`
 const Inputitle = styled.p`
   font-size: 18px;
   font-weight: bold;
+  color: #212121;
 `;
 
 export default Detail;
