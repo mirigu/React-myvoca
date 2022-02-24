@@ -1,1 +1,1 @@
-# Second_React
+# 나만의 단어장
